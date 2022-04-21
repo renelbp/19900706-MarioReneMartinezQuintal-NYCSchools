@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/schoolListFragmet"
+        android:icon="@drawable/ic_directory"
+        android:iconTint="@color/purple_700"
+        android:title="@string/school_directory" />
+
+    <item
+        android:id="@+id/satResultsListFragment"
+        android:icon="@drawable/ic_baseline_assessment_24"
+        android:iconTint="@color/purple_700"
+        android:title="@string/sat_results" />
+
+</menu>

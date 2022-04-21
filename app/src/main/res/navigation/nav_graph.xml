@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/schoolListFragmet">
+
+    <fragment
+        android:id="@+id/schoolListFragmet"
+        android:name="com.example.a19900706_mariorenemartinezquintal_nycschools.schools.SchoolsListFragmet"
+        android:label="@string/school_directory"
+        tools:layout="@layout/fragment_school_list" >
+        <action
+            android:id="@+id/action_schoolListFragmet_to_schoolDetailsFragment2"
+            app:destination="@id/schoolDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/schoolDetailsFragment"
+        android:name="com.example.a19900706_mariorenemartinezquintal_nycschools.schools.SchoolDetailsFragment"
+        android:label="Character Details"
+        tools:layout="@layout/fragment_school_details" >
+        <argument
+            android:name="character_selected"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/satResultsListFragment"
+        android:name="com.example.a19900706_mariorenemartinezquintal_nycschools.SatResultsListFragment"
+        android:label="@string/sat_results"
+        tools:layout="@layout/fragment_sat_results_list" />
+
+
+</navigation>
